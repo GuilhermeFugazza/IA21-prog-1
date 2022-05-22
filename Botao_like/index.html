@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <title>Perfil | Mike Wazowski</title>
+</head>
+
+<body>
+    <main>
+        
+        <span class="mike">
+                <img src="mike.jpg">
+        </span>
+        <div class="coracao"> </div>
+        <div class="contador">0</div>
+    </main>
+    <script>
+        const domMain = document.querySelector("main")
+        // const domDivNum = document.querySelector("main div:last-child")
+        const domDivNum = domMain.querySelector("div:last-child")
+        let counter = 0
+        domMain.addEventListener("click", () => {
+            counter++
+            domDivNum.innerHTML = counter
+        })
+    </script>
+</body>
+
+</html>
