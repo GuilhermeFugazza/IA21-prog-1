@@ -12,8 +12,8 @@ public class Quadrado {
         this.tamanhoLado = tam;
     }
     
-    public int calcularArea(int tam) {
-        return this.tamanhoLado;
+    public int calcularArea() {
+        return this.tamanhoLado * this.tamanhoLado;
     }
     
     public int retornarValor () {

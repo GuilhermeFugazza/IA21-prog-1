@@ -3,7 +3,7 @@ package ex1;
 public class Ex1 {
 
     public static void main(String[] args) {
-        // Teste ex1
+        // Teste Bola
         Bola bolinha = new Bola("azul", "plastico", 45.2);
         System.out.println("A bola é de cor " + bolinha.mostrarCor());
         bolinha.trocarCor("verde");
@@ -11,9 +11,10 @@ public class Ex1 {
         
         //Teste Quadrado
         Quadrado xuxa = new Quadrado(100);
-        System.out.println("O tamanho do quadrado é " + xuxa.mudarValor());
+        System.out.println("O tamanho do quadrado é " + xuxa.retornarValor());
         xuxa.mudarValor(50);
-        System.out.println("O tamanho do quadrado é " + xuxa.mudarValor());
+        System.out.println("O tamanho do quadrado é " + xuxa.retornarValor());
+        xuxa.calcularArea();
+        System.out.println("O tamanho do quadrado é " + xuxa.retornarValor());
     }
-    
 }
